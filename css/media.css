@@ -1,0 +1,163 @@
+/* nav */
+
+@media (max-width: 575.98px) {
+    .bg-myNav {
+        padding-block: 0 !important;
+    }
+}
+
+
+/* typing */
+
+@media (max-width: 991.98px) {
+    .homeLayer p {
+        left: 37%;
+    }
+}
+
+@media (max-width: 768px) {
+    .homeLayer p {
+        left: 33%;
+    }
+    .homeLayer h1 {
+        font-size: 60px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .homeLayer p {
+        font-size: 37px;
+        margin-top: 10px;
+        top: 50%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 400px) {
+    .homeLayer p {
+        left: 22%;
+        font-size: 32px;
+    }
+}
+
+
+/* home */
+
+@media (max-width: 991.98px) {
+    nav ul li a:hover::before {
+        width: 15%;
+    }
+    body:not(:has(:target)).home-link::before,
+    body:has(.home:target) .home-link::before,
+    body:has(.about:target) .about-link::before,
+    body:has(.services:target) .services-link::before,
+    body:has(.portfolio:target) .portfolio-link::before,
+    body:has(.blog:target) .blog-link::before,
+    body:has(.contact:target) .contact-link::before {
+        width: 15%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .homeLayer h1 {
+        font-size: 50px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 450px) {
+    .homeLayer h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+
+/* about */
+
+@media (max-width: 991.98px) {
+    .about .second-part h2 {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .data {
+        padding: 15px;
+    }
+    .about .second-part p {
+        font-size: 17px;
+    }
+    .about .container {
+        padding: 10px;
+    }
+}
+
+
+/* counting */
+
+@media (max-width: 991.98px) {
+    .myrow {
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .data {
+        padding: 15px;
+    }
+    .about .second-part p {
+        font-size: 17px;
+    }
+}
+
+
+/* client */
+
+@media (max-width: 991.98px) {
+    .max-width {
+        width: 38rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .client .carousel-inner blockquote p {
+        font-size: 15px;
+    }
+    .max-width {
+        width: 18rem;
+    }
+}
+
+
+/* blog */
+
+@media (max-width: 991.98px) {
+    .myblog {
+        row-gap: 20px;
+    }
+}
+
+
+/* contact */
+
+@media (max-width: 575.98px) {
+    .icon-social {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .secPart p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .contact .firstPart h2,
+    .contact .secPart h2 {
+        font-size: 26px;
+        margin: 0px 0px 25px;
+    }
+    .contact .cont {
+        padding: 5px;
+    }
+}

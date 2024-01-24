@@ -1,0 +1,943 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: none !important;
+            text-decoration: none !important;
+            text-decoration-style: none !important;
+            list-style: none !important;
+        }
+        
+        body {
+            font-family: system-ui -apple-system "Segoe UI" Roboto "Helvetica Neue" "Noto Sans" "Liberation Sans" Arial sans-serif "Apple Color Emoji" "Segoe UI Emoji" "Segoe UI Symbol" "Noto Color Emoji"
+        }
+        
+        .bg-myNav {
+            padding-block: 15px !important;
+        }
+        
+        .bg-myNav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 12px 0;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 999;
+        }
+        
+        .my-brand {
+            line-height: 33.6px;
+            letter-spacing: 1px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .menu-nav a {
+            text-transform: uppercase;
+            color: #fff;
+            padding-inline: 10px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            font-weight: 600;
+            position: relative;
+            transition: all 0.4s;
+        }
+        
+        .menu-nav li {
+            padding-inline: 10px;
+        }
+        
+        nav ul li a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1.5px;
+            background-color: #fff;
+            left: 10px;
+            bottom: -1px;
+            transition: width 0.4s;
+        }
+        
+        nav ul li a:hover::before {
+            width: 65%;
+        }
+        
+        body:not(:has(:target)).home-link::before,
+        body:has(.home:target) .home-link::before,
+        body:has(.about:target) .about-link::before,
+        body:has(.services:target) .services-link::before,
+        body:has(.portfolio:target) .portfolio-link::before,
+        body:has(.blog:target) .blog-link::before,
+        body:has(.contact:target) .contact-link::before {
+            width: 65%;
+        }
+        
+        .home {
+            background-image: url('../images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+        
+        .homeLayer {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 6;
+        }
+        
+        .homeLayer h1 {
+            font-size: 72px;
+            color: #ffff;
+            line-height: 86.4px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        
+        .homeLayer p {
+            font-size: 40px;
+            color: #ffff;
+            line-height: 60px;
+            font-weight: 600;
+            margin-top: 10px;
+            position: absolute;
+            top: 57%;
+            left: 45%;
+        }
+        
+        .typingClass::after {
+            content: "";
+            animation: typing 10s linear infinite;
+        }
+        
+        @keyframes typing {
+            0% {
+                content: "";
+            }
+            1.8461538461538463% {
+                content: "P";
+            }
+            3.6923076923076925% {
+                content: "Ph";
+            }
+            5.538461538461538% {
+                content: "Pho";
+            }
+            7.384615384615385% {
+                content: "Phot";
+            }
+            9.230769230769232% {
+                content: "Photo";
+            }
+            11.076923076923077% {
+                content: "Photog";
+            }
+            12.923076923076923% {
+                content: "Photogr";
+            }
+            14.76923076923077% {
+                content: "Photogra";
+            }
+            16.615384615384617% {
+                content: "Photograp";
+            }
+            18.461538461538463% {
+                content: "Photograph";
+            }
+            20.30769230769231% {
+                content: "Photographe";
+            }
+            22.153846153846153% {
+                content: "Photographer";
+            }
+            24% {
+                content: "Photographer|";
+            }
+            23.923076923076923% {
+                content: "Photographer|";
+            }
+            24% {
+                content: "Photographer";
+            }
+            24.076923076923077% {
+                content: "Photographe";
+            }
+            24.153846153846153% {
+                content: "Photograph";
+            }
+            24.23076923076923% {
+                content: "Photograp";
+            }
+            24.307692307692307% {
+                content: "Photogra";
+            }
+            24.384615384615383% {
+                content: "Photogr";
+            }
+            24.46153846153846% {
+                content: "Photog";
+            }
+            24.53846153846154% {
+                content: "Photo";
+            }
+            24.615384615384617% {
+                content: "Phot";
+            }
+            24.692307692307693% {
+                content: "Pho";
+            }
+            24.76923076923077% {
+                content: "Ph";
+            }
+            24.846153846153847% {
+                content: "P";
+            }
+            25% {
+                content: "";
+            }
+            27.666666666666668% {
+                content: "D";
+            }
+            30.333333333333332% {
+                content: "De";
+            }
+            33% {
+                content: "Des";
+            }
+            35.666666666666664% {
+                content: "Desi";
+            }
+            38.33333333333333% {
+                content: "Desig";
+            }
+            41% {
+                content: "Design";
+            }
+            43.666666666666664% {
+                content: "Designe";
+            }
+            46.33333333333333% {
+                content: "Designer";
+            }
+            49% {
+                content: "Designer|";
+            }
+            48.888888888888886% {
+                content: "Designer|";
+            }
+            49% {
+                content: "Designer";
+            }
+            49.111111111111114% {
+                content: "Designe";
+            }
+            49.22222222222222% {
+                content: "Design";
+            }
+            49.333333333333336% {
+                content: "Desig";
+            }
+            49.44444444444444% {
+                content: "Desi";
+            }
+            49.55555555555556% {
+                content: "Des";
+            }
+            49.666666666666664% {
+                content: "De";
+            }
+            49.77777777777778% {
+                content: "D";
+            }
+            50% {
+                content: "";
+            }
+            52.18181818181818% {
+                content: "F";
+            }
+            54.36363636363636% {
+                content: "Fr";
+            }
+            56.54545454545455% {
+                content: "Fre";
+            }
+            58.72727272727273% {
+                content: "Free";
+            }
+            60.90909090909091% {
+                content: "Freel";
+            }
+            63.09090909090909% {
+                content: "Freela";
+            }
+            65.27272727272727% {
+                content: "Freelan";
+            }
+            67.45454545454545% {
+                content: "Freelanc";
+            }
+            69.63636363636363% {
+                content: "Freelance";
+            }
+            71.81818181818181% {
+                content: "Freelancer";
+            }
+            74% {
+                content: "Freelancer|";
+            }
+            73.9090909090909% {
+                content: "Freelancer|";
+            }
+            74% {
+                content: "Freelancer";
+            }
+            74.0909090909091% {
+                content: "Freelance";
+            }
+            74.18181818181819% {
+                content: "Freelanc";
+            }
+            74.27272727272727% {
+                content: "Freelan";
+            }
+            74.36363636363636% {
+                content: "Freela";
+            }
+            74.45454545454545% {
+                content: "Freel";
+            }
+            74.54545454545455% {
+                content: "Free";
+            }
+            74.63636363636364% {
+                content: "Fre";
+            }
+            74.72727272727273% {
+                content: "Fr";
+            }
+            74.81818181818181% {
+                content: "F";
+            }
+            75% {
+                content: "";
+            }
+            77.4% {
+                content: "D";
+            }
+            79.8% {
+                content: "De";
+            }
+            82.2% {
+                content: "Dev";
+            }
+            84.6% {
+                content: "Deve";
+            }
+            87% {
+                content: "Devel";
+            }
+            89.4% {
+                content: "Develo";
+            }
+            91.8% {
+                content: "Develop";
+            }
+            94.2% {
+                content: "Develope";
+            }
+            96.6% {
+                content: "Developer";
+            }
+            99% {
+                content: "Developer|";
+            }
+            98.9% {
+                content: "Developer|";
+            }
+            99% {
+                content: "Developer";
+            }
+            99.1% {
+                content: "Develope";
+            }
+            99.2% {
+                content: "Develop";
+            }
+            99.3% {
+                content: "Develo";
+            }
+            99.4% {
+                content: "Devel";
+            }
+            99.5% {
+                content: "Deve";
+            }
+            99.6% {
+                content: "Dev";
+            }
+            99.7% {
+                content: "De";
+            }
+            99.8% {
+                content: "D";
+            }
+            100% {
+                content: "";
+            }
+        }
+        /* -----------about---------- */
+        
+        .about {
+            background-color: #F5F5F5;
+        }
+        
+        .about .container {
+            padding: 48px;
+        }
+        
+        .about .skill-title {
+            color: #1E1E1E;
+            font-size: 17.6px;
+            line-height: 26.4px;
+            font-weight: 600;
+            margin: 18px 0px 16px;
+        }
+        
+        .about .skill-item p {
+            margin: 0 0 5px;
+            color: #4E4E4E;
+        }
+        
+        .about .second-part h2 {
+            color: #1E1E1E;
+            font-size: 32px;
+            line-height: 38.4px;
+            margin: 0px 0px 50px;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .about .second-part h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 17%;
+            height: 3px;
+            background-color: #0078FF;
+        }
+        
+        .about .second-part p {
+            color: #4E4E4E;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 300;
+        }
+        /* services */
+        
+        .general-padding {
+            padding: 3.125rem 0 1.375rem 0;
+        }
+        
+        .bg-grey {
+            background-color: #F7F7F7;
+        }
+        
+        .title {
+            margin-bottom: 60px;
+        }
+        
+        .title h3 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #1e1e1e;
+        }
+        
+        .title p {
+            color: #4e4e4e;
+        }
+        
+        .line {
+            width: 40px;
+            height: 5px;
+            background-color: #0078ff;
+            margin: 0 auto;
+        }
+        
+        .my-card p {
+            line-height: 24px;
+            letter-spacing: .1rem;
+            color: #4E4E4E;
+            margin: 0px 0px 16px;
+            padding: 0px;
+        }
+        
+        .my-card {
+            background-color: #fff;
+            padding: 2.5rem 1.3rem;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .my-card h6 {
+            color: #1E1E1E;
+            font-size: 22.4px;
+            line-height: 26.88px;
+            font-weight: 500;
+            margin: 0px 0px 8px;
+            padding: 6.4px 0px;
+        }
+        
+        .services .icon {
+            height: 100px;
+            width: 100px;
+            font-size: 2rem;
+            border-radius: 50%;
+            line-height: 1.55;
+            margin-bottom: 15px;
+            text-align: center;
+            box-shadow: 0 0 0 10px #0078ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 500ms ease;
+        }
+        
+        .serv:hover .icon {
+            background-color: #0078ff;
+            color: #fff;
+            box-shadow: 0 0 0 10px #cde1f8;
+            transition: all 0.5 ease;
+        }
+        
+        .services .my-card span {
+            display: inline-block;
+        }
+        /* counter-------------- */
+        
+        .numbers {
+            position: relative;
+            background-image: url(../images/counters-bg.jpg);
+            background-position: 100% 100%;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .numbers .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.7;
+            background-color: #0078ff;
+            z-index: 2;
+        }
+        
+        .numbers .item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        
+        .numbers .icon {
+            height: 70px;
+            width: 70px;
+            font-size: 2rem;
+            border-radius: 50%;
+            line-height: 1.55;
+            margin-bottom: 15px;
+            text-align: center;
+            box-shadow: 0 0 0 10px #cde1f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        
+        .numbers h3 {
+            color: #fff;
+            font-size: 32px;
+            line-height: 48px;
+            margin: 0;
+        }
+        
+        .numbers p {
+            color: #fff;
+            line-height: 24px;
+            margin: 0;
+        }
+        /* --------------portfolio--------------------- */
+        
+        .text-start {
+            text-align: right;
+        }
+        
+        .portfolio .card-body-title h2 {
+            color: #1E1E1E;
+            font-size: 19.2px;
+            margin: 0px 0px 8px;
+            font-weight: 500;
+        }
+        
+        .portfolio .card-body-title p {
+            font-size: 12.8px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .portfolio .card-body-title span {
+            color: #0078FF;
+        }
+        
+        .card-body-icon {
+            height: 50px;
+            width: 50px;
+        }
+        
+        .card-body-icon i {
+            font-size: 30px;
+            line-height: 60px;
+            color: #0078FF;
+            cursor: pointer;
+        }
+        
+        .portfolio img {
+            transition: all 1s;
+        }
+        
+        .portfolio .hov-card:hover img {
+            transform: scale(1.3);
+        }
+        
+        .card-img {
+            overflow: hidden;
+            overflow: hidden;
+        }
+        
+        .card {
+            border: 0;
+            overflow: hidden;
+        }
+        /* ---------------------client---------------------- */
+        
+        .client {
+            position: relative;
+            background-image: url(../images/overlay-bg.jpg);
+            background-position: 100% 100%;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .client .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.7;
+            background-color: #0078ff;
+        }
+        /* .carousel-item {
+            z-index: 999;
+        } */
+        
+        .client .carousel-inner {
+            margin-top: 4rem;
+        }
+        
+        .client .carousel-inner .img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 0;
+        }
+        
+        .client .carousel-inner img {
+            display: block;
+            width: 100%;
+        }
+        
+        .client .carousel-inner blockquote p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 300;
+            color: #fff;
+        }
+        
+        .client .carousel-inner blockquote h6 {
+            color: #FFFFFF;
+            font-size: 22.4px;
+            line-height: 33.6px;
+            font-weight: 600;
+            margin: 16px 0px;
+        }
+        
+        .max-width {
+            width: 56rem;
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            width: 12px;
+            height: 12px;
+            padding: 0;
+            margin-right: 6px;
+            margin-left: 6px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #7CADEA;
+            background-clip: padding-box;
+            border-radius: 50%;
+            opacity: 1;
+        }
+        
+        .carousel-indicators button:hover {
+            background-color: #fff;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #fff;
+        }
+        
+        span {
+            display: inline-block;
+        }
+        /* -------------Blog----------------- */
+        
+        .blog-card a {
+            color: #1e1e1e;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .blog-card .card-title:hover a {
+            color: #0078FF;
+        }
+        
+        .blog-card .author:hover a {
+            color: #0078FF;
+        }
+        
+        .blog-card .card-body p {
+            color: #4E4E4E;
+            line-height: 24px;
+            margin: 0px 0px 16px;
+        }
+        
+        .blog-card {
+            border: 1px solid #D2D2D2;
+        }
+        
+        .blog-card .card-footer {
+            background-color: #F8F8F8;
+            /* border: 2px solid #D2D2D2; */
+        }
+        
+        .blog-card .img-foot {
+            width: 32px;
+            height: 32px;
+            margin-right: 4px;
+            overflow: hidden;
+        }
+        
+        .card-blog .date {
+            color: #4e4e4e;
+        }
+        
+        .blog-card .card-body {
+            padding-top: 30px;
+            position: relative;
+        }
+        
+        .blog-card .layer {
+            position: absolute;
+            top: -10%;
+            left: 40%;
+            background-color: #0078FF;
+            text-transform: uppercase;
+            color: #fff;
+            width: fit-content;
+        }
+        
+        .blog-card .layer h6 {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 11.2px;
+            line-height: 13.44px;
+            letter-spacing: 0.1px;
+            margin: 0;
+            padding: 8px 15px;
+        }
+        /* --------------------contact------------------ */
+        
+        .contact {
+            position: relative;
+            background-image: url(../images/overlay-bg.jpg);
+            background-position: 100% 100%;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .contact .firstPart h2,
+        .contact .secPart h2 {
+            color: #1E1E1E;
+            font-size: 32px;
+            line-height: 38.4px;
+            margin: 0px 0px 50px;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .contact .firstPart h2::before,
+        .contact .secPart h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 17%;
+            height: 3px;
+            background-color: #0078FF;
+        }
+        
+        .form {
+            padding: 10px;
+        }
+        
+        .my-input {
+            padding: 12px 15px;
+            border-radius: 0;
+        }
+        
+        .contact textarea {
+            min-height: 130px;
+            max-height: 300px;
+        }
+        
+        .contact {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+            z-index: 1;
+        }
+        
+        .contact .cont {
+            background-color: #fff;
+            padding: 3rem;
+            margin: 4rem auto 0;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+        
+        .secPart p {
+            color: #4E4E4E;
+            font-size: 20px;
+            line-height: 30px;
+            margin: 0px 0px 16px;
+        }
+        
+        .cont button {
+            color: #FFFFFF;
+            background-color: #0078ff;
+            font-size: 19.2px;
+            line-height: 28.8px;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 5rem;
+            margin: 1rem;
+            transition: all 0.4s;
+        }
+        
+        .cont button:hover {
+            background-color: #2389ff;
+            box-shadow: 0 0 0 5px #c9d3dd;
+        }
+        
+        .contact .icons-cont {
+            line-height: 2;
+        }
+        
+        .contact .icons-cont i {
+            color: #3494FF;
+            font-size: 16px;
+            line-height: 32px;
+        }
+        
+        .contact .icons-cont li {
+            color: #4E4E4E;
+            font-size: 16px;
+            line-height: 32px;
+        }
+        
+        .contact .icon-social {
+            padding-top: 16px;
+            padding-inline: 10px;
+        }
+        
+        .contact .icon-social li {
+            padding: 1rem;
+            font-size: 19.2px;
+        }
+        
+        .contact .icon-social i {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px #0078ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+            color: #000;
+        }
+        
+        .contact .icon-social i:hover {
+            background-color: #0078ff;
+            color: #fff;
+            box-shadow: 0 0 0 4px #cde1f8;
+            transition: all 0.5 ease;
+        }
+        
+        .contact .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.7;
+            background-color: #0078ff;
+            z-index: -1;
+        }
+        /* ------------footer------------- */
+        
+        .foooot {
+            height: 103px;
+            background-color: #0062D3;
+        }
+        
+        .first-p {
+            margin: 0px 0px 4.8px;
+            line-height: 24px;
+        }
+        
+        footer .footer-bottom p {
+            color: #fff;
+        }
